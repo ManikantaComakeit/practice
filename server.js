@@ -8,6 +8,7 @@ server.use(express.json())
 server.post("/",(req,res)=>{
     console.log(req.body);
     //this is manikanta branch
+    //this is mani2 branch
     res.status(200).json({});
 })
 
