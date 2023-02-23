@@ -24,6 +24,11 @@ app.get("/userHistory/:id",(req,res)=>{
     id=req.params.id
     console.log("sdfs")
     res.status(201).json({msg:history[id]})
+});
+
+
+app.post("/sendemail",(req,res)=>{
+    res.status(200).json({mssg:"email sent"});
 })
 
 app.listen("3000",()=>{
