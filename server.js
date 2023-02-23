@@ -18,6 +18,12 @@ server.get("/",(req,res)=>{
     res.status(200).send(productList);
 })
 
+server.post("/users",(req,res)=>{
+    const productName = req.body.name;
+  productList.push(productName);
+  res.status(201).send({ message: 'Product added successfully!' });
+})
+
 server.listen(3000,()=>{
     console.log("server is running")
 })
