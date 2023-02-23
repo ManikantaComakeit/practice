@@ -5,7 +5,7 @@ const server = express();
 server.use(cors())
 server.use(express.json())
 
-let productList = [];
+let productList = ["iqoo","oneplus"];
 
 server.post("/",(req,res)=>{
     const productName = req.body.name;
