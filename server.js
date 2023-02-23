@@ -15,7 +15,7 @@ const history=[{"userId":"0",
 
 //get all users
 app.get("/userHistory",(req,res)=>{
-    console.log("sdfs")
+    console.log("this is userHistory from new branch")
     res.status(201).json({msg:history})
 })
 
