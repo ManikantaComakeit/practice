@@ -43,6 +43,6 @@ server.get("/",(req,res)=>{
     res.status(200).send(productList);
 })
 
-server.listen(3000,()=>{
+server.listen(4000,()=>{
     console.log("server is running")
-})
+});
