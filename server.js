@@ -1,5 +1,4 @@
 
-
 const express=require("express");
 const cors=require("cors");
 
@@ -15,7 +14,7 @@ const history=[{"userId":"0",
 
 //get all users
 app.get("/userHistory",(req,res)=>{
-    console.log("this is userHistory from new branch")
+    console.log("something")
     res.status(201).json({msg:history})
 })
 
